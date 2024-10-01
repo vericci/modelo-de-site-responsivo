@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*garante o preenchimento padding seja incluido no calculo da largura evitandonque o conteudo ultrapassae a tela*/
+    font-family: "Lora", serif;
+    text-decoration: none;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+
+header {
+    background-color: #85827e;
+    padding: min(5vh, 4rem);
+    /*Ajustando o padding para ser mais flexivel*/
+    width: 100%;
+    /*colocamos a largura para 100% do espaço disponivel*/
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*aqui começamos o posicionamento do header*/
+    position: sticky;
+    /*posionamento do header usando o stick, sendo um posionamento fixe, porém distinto do Fixed*/
+    top: 0;
+    /*espaçamento superior zerado, Fazendo com que o header fique grudado ao top*/
+    left: 0;
+    /*Espacamento a esquerda zerado, fazendo com que o header fique grudado a esquerda*/
+    z-index: 999;
+    /*Eixo de profundidade (eixo Cartesiano)*/
+    box-shadow: 0 0.21rem 0.5rem white;
+    /*Primeiro valor sombra na Direita (0) segundo valor sombra botton (0.21rem terceira valor gradiente da sombra (0.5 rem)*/
+
+}
+
+header i {
+    color: white;
+    font-size: 6em;
+}
+
+header i:hover {
+    color: black;
+    font-size: 7em;
+    transition: 0.7s;
+}
+
+header button {
+    width: 13rem;
+    height: 1.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.3rem;
+    color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.21rem 0.5rem black;
+}
+
+header button:hover {
+    width: 14rem;
+    height: 1.6rem;
+    background-color: rgb(199, 199, 199);
+    border-radius: 1rem;
+    padding: 1.4rem;
+    color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.21rem 0.5rem black;
+    transition: 0.8s;
+
+}
+
+
+
+
+.section10 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #b6aea4;
+    width: 100%;
+    padding: min(20vh, 6rem);
+
+
+}
+
+.section20 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #b6aea4;
+    width: 100%;
+    padding: min(20vh, 6rem);
+
+}
+
+.div-1 {
+    font-size: 2em;
+    margin: 1.2em;
+
+}
+
+.div-2 img {
+    width: 40rem;
+    margin: 5rem auto;
+    display: block
+}
+
+
+.section30 {
+    background-color: #b6aea4;
+    padding: min(20vh, 6rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+    z-index: 1;  
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+.card { 
+    width: 250px;
+    height: 400px; 
+    margin: 30px; 
+    box-shadow: 20px 20px 50px black; 
+    border-radius: 15px; 
+    background-color:#85827e;  
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(50px);
+    opacity: 0.2;
+    transition: 0.5s;
+}
+.content:hover {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.content h2 {
+    position: absolute;
+    right: 30px;
+    font-size: 5rem;
+    color: #3b3b3b;
+}
+
+.content h3 {
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+}
+
+.content p {
+    font-size: 0.8em;
+    color: white;
+    font-weight: 300;
+    margin-top: 4rem;
+
+}
+
+.content a {
+    padding: 8px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: 500;
+    margin-top: 2.7rem;
+    box-shadow: 0 5px 15px black;
+    display: inline-block;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #85827e;
+    width: 100%;
+    padding: min(10vh, 4rem);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer nav ul {
+    display: flex;
+
+}
+
+footer nav ul li {
+    list-style: none;
+    margin: 1em;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer nav ul li a:hover {
+    color: white;
+    transition: 0.8s;
+
+}
+
+footer i {
+    color: black;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+footer i:hover {
+    color: white;
+    font-size: 2.5rem;
+    transition: 0.8s;
+
+}
+
+@media (max-width: 830px) {
+    header {
+        font-size: 0.5em;
+    }
+
+    header button {
+        width: 10rem;
+        height: 0.8rem;
+    }
+
+    header button:hover {
+        width: 10rem;
+        height: 0.8rem;
+    }
+
+    .section10 {
+        padding: 9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .div-1 p {
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: justify;
+
+
+
+        margin: 1em;
+
+    }
+
+    .div-2 img {
+        width: 20rem;
+        margin: 0 auto;
+    }
+
+    .section20 {
+        padding: 9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    footer {
+        padding: min(5vh, 2rem);
+        display: block;
+        text-align: center;
+
+    }
+
+    footer i {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin: 0.9em;
+
+
+    }
+
+    footer i:hover {
+        font-size: 1.5rem;
+        transition: 0.8s;
+    }
+
+    footer nav ul li a {
+        font-size: 0.7rem;
+
+    }
+
+}
